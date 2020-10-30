@@ -1,0 +1,2 @@
+カスケードファイルの作成手順
+https://workout-engineer.com/python-opencv-cascade/

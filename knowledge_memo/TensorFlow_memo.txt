@@ -1,0 +1,29 @@
+
+x_train, x_test, y_train, y_test = split(
+    iris.data, iris.target, train_size=0.8, test_size=0.2)
+
+・train：学習データ
+・test：試験データ
+・size：データの割合（学習データ、試験データ）
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+model.add(Activation('relu'))
+model.add(Activation('softmax'))
+
+・活性化関数調査する
+_______________________________________________________________________
+model.compile(loss='sparse_categorical_crossentropy',
+              optimizer='sgd', metrics=['accuracy'])
+
+・loss ：損失関数(コスト関数)、クロスエントロピー法を適用
+・optimizer：最適化アルゴリズム、確率的勾配降下法を適用
+・metrics ：評価関数のリスト、正解率を適用
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+model.fit
+
+・どのような学習法なのか調査する
+_______________________________________________________________________
+score = model.evaluate(x_test, y_test, batch_size=1)
+
+
+・中身の調査
+_______________________________________________________________________
