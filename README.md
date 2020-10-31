@@ -4,6 +4,22 @@
 ## 目的
 機械学習系の特訓
 
+## 開発環境
+
+| 使用ツール       | バージョン | URL                       |
+| ---------------- | ---------- | ------------------------- |
+| python(仮想環境) | 3.5        | https://www.anaconda.com/ |
+| python(仮想環境) | 3.6        | https://www.anaconda.com/ |
+
+### 使用ライブラリ (Python)
+
+| 使用ライブラリ | 説明                                       |
+| -------------- | ------------------------------------------ |
+| TensorFlow     | ディープラーニングの SDK                   |
+| Keras          | ニューラルネットワークの python ライブラリ |
+| scikit-learn   | 機械学習の python ライブラリ               |
+
+
 ## 行ったこと
 - 機械学習系の基礎調査
     - knowledge_memo
@@ -35,3 +51,9 @@
     - 決定木：tree.py
 
 <img src="img/tree.png" width="50%">
+
+
+# 参考
+
+Python コードのコーディング規約
+https://pep8-ja.readthedocs.io/ja/latest/
